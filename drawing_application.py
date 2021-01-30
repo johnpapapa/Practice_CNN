@@ -69,9 +69,6 @@ class Application(tkinter.Frame):
         """
         pass
 
-    def export_directory_dialog(self):
-        pass
-
     def canvas_setup(self):
         self.before_x, self.before_y = None, None
         self.color = 'black'
@@ -102,6 +99,11 @@ class Application(tkinter.Frame):
         self.draw.line((self.old_x, self.old_y, event.x, event.y), fill=self.color, width=5)
         self.old_x, self.old_y = None, None
         
+    def export_directory_dialog(self):
+        """
+        ファイルの出力先の参照指定
+        """
+        pass
 
 
 if __name__ == "__main__":
